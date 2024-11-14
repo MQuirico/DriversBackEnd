@@ -4,7 +4,7 @@ const morgan = require ("morgan");
 const cors = require ("cors");
 const server = express();
 
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001', "https://*.vercel.app", 'http://localhost:5000', 'http://localhost:5173'];
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001', "*.vercel.app", 'http://localhost:5000', 'http://localhost:5173'];
 
 server.use(morgan("dev"));
 server.use(express.json());
